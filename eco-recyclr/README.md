@@ -1,36 +1,26 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Instructions to Get the WebApp running
 
-First, run the development server:
+First, install Node.js onyour local device by going to this website: https://nodejs.org/en.
 
+Then got to your terminal and run the following command to install Next.js
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install next react react-dom
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Next, make sure you have python and its dependencies installed on your device. You can go to the offical website for more infromation: https://www.python.org/downloads/. Additionally, you need to insall flask. For detail information on how to do so, go to the readme found in the Main.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Depending on your version of python run one of the following commands:
+```bash
+python3 eco-recyclr-PythonServer/app.py
+python eco-recyclr-PythonServer/app.py
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Lastly, in a separate terminal window/tab, navigate to this folder, eco-recyclr, and run the command to start next:
+```bash
+npm run dev
+```
+Once it starts running, it will generate a URL. Open http://localhost:3000 with your browser to see the result.
