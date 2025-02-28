@@ -7,7 +7,7 @@
 - **SwiftUI (iOS)**
 
 ### Backend
-- **Python (Flask, PyTorch, PIL, torchvision)**
+- **Python (Flask, PyTorch,torchvision)**
 
 ## Setup Instructions
 
