@@ -1,53 +1,42 @@
-EcoRecyclr - Image-Based Recyclability Classifier
+# EcoRecyclr-Mobile README
 
-EcoRecyclr is a mobile application that allows users to upload images of waste materials to determine whether they are recyclable. The app consists of a SwiftUI-based iOS front end and a Flask-based Python backend that uses a ResNet-18 deep learning model to classify waste items.
+**VideoShowcase.mov** contains a video that shows the application running with the model.
 
-VideoShowcase.mov contains a video that shows the application running with the model.
+## Tech Stack
+### Frontend
+- **SwiftUI (iOS)**
 
-Features
+### Backend
+- **Python (Flask, PyTorch, PIL, torchvision)**
 
-Upload an image from the iOS app
+## Setup Instructions
 
-Send the image to the Flask backend for processing
-
-Classify the waste material into one of 10 categories
-
-Determine whether the item is recyclable
-
-Display results in the mobile app
-
-Tech Stack
-
-Frontend: SwiftUI (iOS)
-
-Backend: Python (Flask, PyTorch, PIL, torchvision)
-
-Setup Instructions
-
-1. Backend (Flask API)
-
-Install Python and Virtual Environment
-
+### 1. Backend (Flask API)
+#### Install Python and Virtual Environment
 Ensure you have Python 3 installed. Then, create and activate a virtual environment:
-
+```sh
 python3 -m venv venv
 source venv/bin/activate  # Mac/Linux
 venv\Scripts\activate  # Windows
+```
 
-Install Required Dependencies
-
+#### Install Required Dependencies
 Once inside the virtual environment, install the necessary Python packages:
+```sh
+pip install flask torch torchvision
+```
 
-pip install flask torch torchvision torch
-
-Run the Flask Server using
-
+#### Run the Flask Server
+```sh
 python3 main.py
+```
 
-2. Frontend (iOS SwiftUI App)
+### 2. Frontend (iOS SwiftUI App)
+#### Open the Xcode Project
+1. Open the `EcoRecyclr-Mobile` project in Xcode.
+2. Ensure your device or simulator is selected.
+3. Click **Run** in Xcode to launch the app on a simulator or connected device.
 
-Open the Xcode Project
+---
+This README provides all the necessary details to set up and run the **EcoRecyclr-Mobile** application. 🚀
 
-Ensure your device or simulator is selected.
-
-Click Run in Xcode to launch the app on a simulator or connected device.
